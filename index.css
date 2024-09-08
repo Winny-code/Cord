@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+
+}
+nav{
+    width: 100%;
+    height: 7vw;
+    border-radius: 5px;
+    background: linear-gradient(125deg,#d2e908,#f33e08 );
+    
+
+}
+
+
+
+.nav-container{
+    max-width: 90vw;
+    height: 100%;
+    /*background-color: yellow;*/
+    margin: 0 auto;
+    align-items: center;
+
+}
+.logonav{
+    width: 3.32vw;
+    object-fit: contain;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    font-size: 1.2vw;
+
+}
+.sidebar {
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product {
+    width: 80%;
+    padding: 10px;
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.sidebar-search {
+    padding: 10px;
+    font-size: 1.2vw;
+    border: 2px solid transparent;
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    background: #f2f2f2;
+    transition: .3s;
+    margin-bottom: 20px;
+
+}
+
+.sidebar-search:focus{
+    border: 2px solid #f33e08;
+
+
+}
+.sidebar-items{
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    color: #000;
+    transition: 0.3s;
+
+}
+
+.sidebar-items:hover {
+    background: #f33e08;
+    color: #fff;
+
+
+}
+
+.product-items{
+    cursor: pointer;
+    
+}
+
+.product-items:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+
+
+}
+
+.product-img{
+    width: 100%;
+    height: 17vw;
+    border-radius: 10px;
+
+
+}
+
+.modal,.modal-bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-page{
+    width: 45vw;
+    height: 45vw;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+}
+
+.img-modal{
+    min-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    /*justify-content: center;
+    align-items: center;*/
+
+
+}
+
+.btn-cantrol{
+    background: #da0909;
+   
+}
+
+.btn{
+    width: 2vw;
+    height: 2vw;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background: #ff0606;
+    border-radius: 5px;
+    font-size: 1.1vw;
+    
+}
+

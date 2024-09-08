@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cord guitar</title>
+
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+ 
+    <nav>
+        <div class="nav-container">
+            <a href="index.html"> 
+
+                <img src="./imgCord/1725103489991.png" class="logonav">
+            </a>
+
+        </div>
+        
+
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <input onkeyup="searchsomething(this)" id="txt_search" type="text" class= "sidebar-search" placeholder="ค้นหาคอร์ด">
+            
+            <a onclick="searchproduct('All')" class="sidebar-items">
+                All cord
+            </a> 
+
+            <a onclick="searchproduct('C')" class="sidebar-items">
+                C
+            </a> 
+            
+            <a onclick="searchproduct('Db')" class="sidebar-items">
+                C#
+            </a> 
+            
+            <a onclick="searchproduct('D')" class="sidebar-items">
+                D
+            </a> 
+            
+            <a onclick="searchproduct('Eb')" class="sidebar-items">
+                D#
+            </a> 
+            
+            <a onclick="searchproduct('E')" class="sidebar-items">
+                E
+            </a> 
+            
+            <a onclick="searchproduct('F')" class="sidebar-items">
+                F
+            </a> 
+            
+            <a onclick="searchproduct('Gb')" class="sidebar-items">
+                F#
+            </a> 
+            
+            <a onclick="searchproduct('G')" class="sidebar-items">
+                G
+            </a> 
+            
+            <a onclick="searchproduct('Ab')" class="sidebar-items">
+                G#
+            </a> 
+            
+            <a onclick="searchproduct('A')" class="sidebar-items">
+                A
+            </a> 
+            
+            <a onclick="searchproduct('Bb')" class="sidebar-items">
+                A#
+            </a> 
+            
+            <a onclick="searchproduct('B')" class="sidebar-items">
+                B
+            </a> 
+            
+
+        </div>
+        <div id="productlist" class="product">
+           
+            
+
+
+        </div>
+    </div>
+
+
+    <div id="modalcord" class="modal" style="display: none;">
+        <div onclick="closeModal()" class="modal-bg">
+          <div class="modal-page">
+            
+            <img id="mdd-img" class ="img-modal" src="" alt="">
+            
+               <div class="btn-control">
+                   <button onclick="closeModal()" class="btn">
+                        X
+                    </button>
+                
+                </div>
+
+            </div>
+
+        </div>
+     
+
+    </div>
+    
+</body>
+</html>
